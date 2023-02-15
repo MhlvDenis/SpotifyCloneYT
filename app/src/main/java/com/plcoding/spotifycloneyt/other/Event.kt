@@ -1,4 +1,4 @@
-package com.plcoding.spotifycloneyt.data.other
+package com.plcoding.spotifycloneyt.other
 
 open class Event<out T>(
     private val data: T

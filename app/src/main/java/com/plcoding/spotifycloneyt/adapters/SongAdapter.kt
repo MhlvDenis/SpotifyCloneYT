@@ -50,7 +50,7 @@ class SongAdapter @Inject constructor(
             tvSecondary.text = song.author
             glide.load(song.imageUrl).into(ivItemImage)
 
-            setOnItemClickListener {
+            setOnClickListener {
                 onItemClickListener?.let { click ->
                     click(song)
                 }

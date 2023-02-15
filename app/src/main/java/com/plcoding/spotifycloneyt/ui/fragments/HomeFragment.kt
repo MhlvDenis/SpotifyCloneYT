@@ -6,10 +6,9 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.firebase.firestore.remote.Stream
 import com.plcoding.spotifycloneyt.R
 import com.plcoding.spotifycloneyt.adapters.SongAdapter
-import com.plcoding.spotifycloneyt.data.other.Status
+import com.plcoding.spotifycloneyt.other.Status
 import com.plcoding.spotifycloneyt.ui.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_home.*

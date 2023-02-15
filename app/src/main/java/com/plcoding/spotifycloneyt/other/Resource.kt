@@ -1,4 +1,4 @@
-package com.plcoding.spotifycloneyt.data.other
+package com.plcoding.spotifycloneyt.other
 
 data class Resource<out T>(
     val status: Status,

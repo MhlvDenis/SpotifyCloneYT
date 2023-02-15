@@ -12,8 +12,8 @@ import com.bumptech.glide.request.transition.Transition
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.ui.PlayerNotificationManager
 import com.plcoding.spotifycloneyt.R
-import com.plcoding.spotifycloneyt.data.other.Constants.NOTIFICATION_CHANNEL_ID
-import com.plcoding.spotifycloneyt.data.other.Constants.NOTIFICATION_ID
+import com.plcoding.spotifycloneyt.other.Constants.NOTIFICATION_CHANNEL_ID
+import com.plcoding.spotifycloneyt.other.Constants.NOTIFICATION_ID
 
 class MusicNotificationManager(
     private val context: Context,
@@ -21,6 +21,7 @@ class MusicNotificationManager(
     notificationListener: PlayerNotificationManager.NotificationListener,
     private val newSongCallback: () -> Unit
 ) {
+
     private val notificationManager: PlayerNotificationManager
 
     init {
@@ -72,7 +73,7 @@ class MusicNotificationManager(
                         callback.onBitmap(resource)
                     }
 
-                    override fun onLoadCleared(placeholder: Drawable?)  = Unit
+                    override fun onLoadCleared(placeholder: Drawable?) = Unit
                 })
             return null
         }
